@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <main>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% adverts.forEach(adverts => { %>
+      <img src="<%= adverts.photo %>" alt="<%=adverts.name%>">
+      <ul>
+        <li class ="advertsname"><%= adverts.name %> </li>
+        <li>Price <%= adverts.price %> €</li>
+        <li class="status"> 
+          <% if (adverts.sale) { %>
+          <p>On sale</p>
+          <button>Buy</button>
+          <button class="offer">Send an offer</button>
+        <% } else { %>
+          <p>Searching</p>
+          <button>Sell</button>
+          <button class="offer">Send an offer</button>
+        <% } %>
+        </li>
+      </ul>
+      
+    <% }) %>
+  </main>
+  </body>
+</html>
