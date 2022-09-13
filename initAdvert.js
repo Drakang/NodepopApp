@@ -1,31 +1,31 @@
 const Advert = [
   {
-      name: 'Oakley Sunglasses',
+      name: 'Sunglasses u want to buy',
       sale: true,
-      price: 200.00,
-      photo: '/images/sunglasses_oakley.jpg',
-      tags:['fashion']
+      price: 100.00,
+      photo: '/images/gafas1.png',
+      tags:['carrera', 'niceglasses']
  },
  {
-      name: 'Ray-Ban Sunglasses ',
+      name: 'Sunglasses u dont want to buy ',
       sale: false,
-      price: 150.00,
-      photo: '/images/sunglasses_black.jpg',
-      tags:['fashion']
+      price: 50.00,
+      photo: '/images/gafas2.png',
+      tags:['uglyglasses']
   },
   {
-      name: 'Fjallraven Backpack ',
+      name: 'Please burn this one',
       sale: true,
       price: 70.00,
-      photo: '/images/backpack_fjallraven.jpg',
-      tags:['fashion','school']
+      photo: '/images/gafas3.png',
+      tags:['uglyglasses']
  },
  {
-      name: 'Levels Backpack',
+      name: 'THE RAY-BANS!',
       sale: true,
-      price: 50.00,
-      photo: '/images/backpack_levels_jeans.jpg',
-      tags:['fashion','school']
+      price: 250.00,
+      photo: '/images/gafas4.png',
+      tags:['raybans','niceglasses']
   }
  ];
 

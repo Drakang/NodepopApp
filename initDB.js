@@ -1,14 +1,14 @@
 "use strict";
 
 const readline = require("readline");
-const Adverts = require("./initAdverts.js");
+const advertsData = require("./initAdvert.js");
 
 // Conecting to database
 
 const connection = require("./lib/connectMongoose");
 
 // Load models
-const Product = require("./models/Products");
+const Advert = require("./models/Advert");
 
 async function main() {
   const verify = await question(
@@ -20,22 +20,22 @@ async function main() {
   }
 
   // Init products collection
-  await initProducts();
+  await initAdvert();
 
   connection.close();
 }
 
 main().catch((err) => console.log("Something went wrong:", err));
 
-async function initProducts() {
+async function initAdvert() {
   // Deletes data from database
 
-  const deleted = await Product.deleteMany();
-  console.log(`${deleted.deletedCount} products deleted.`);
+  const deleted = await Advert.deleteMany();
+  console.log(`${deleted.deletedCount} Adverts deleted.`);
 
   // Initial data
 
-  const inserted = await Product.insertMany(Adverts);
+  const inserted = await Advert.insertMany(advertsData);
 
   console.log(`${inserted.length} adverts created.`);
 }

@@ -13,4 +13,4 @@ const advertsSchema = mongoose.Schema({
 
 const Advert = mongoose.model('Advert', advertsSchema)
 
-module.exports = Advert
+module.exports = Advert;
