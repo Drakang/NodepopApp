@@ -1,31 +1,31 @@
 const Advert = [
   {
-      name: 'Sunglasses u want to buy',
+      name: 'BikeBans',
       sale: true,
       price: 100.00,
       photo: '/images/gafas1.png',
-      tags:['carrera', 'niceglasses']
+      tags:['lifestyle','motor']
  },
  {
-      name: 'Sunglasses u dont want to buy ',
+      name: 'Carrera-tx1000',
       sale: false,
       price: 50.00,
       photo: '/images/gafas2.png',
-      tags:['uglyglasses']
+      tags:['lifestyle']
   },
   {
-      name: 'Please burn this one',
+      name: 'Glasses for teachers',
       sale: true,
       price: 70.00,
       photo: '/images/gafas3.png',
-      tags:['uglyglasses']
+      tags:['lifestyle','work']
  },
  {
       name: 'THE RAY-BANS!',
       sale: true,
       price: 250.00,
       photo: '/images/gafas4.png',
-      tags:['raybans','niceglasses']
+      tags:['lifestyle','motor']
   }
  ];
 

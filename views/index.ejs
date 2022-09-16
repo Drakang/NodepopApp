@@ -2,32 +2,40 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <main>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <% adverts.forEach(adverts => { %>
-      <img src="<%= adverts.photo %>" alt="<%=adverts.name%>">
-      <ul>
-        <li class ="advertsname"><%= adverts.name %> </li>
-        <li>Price <%= adverts.price %> €</li>
-        <li>Tag <%= adverts.tags %></li>
-        <li class="status"> 
-          <% if (adverts.sale) { %>
-          <p>On sale</p>
-          <button>Buy</button>
-          <button class="offer">Send an offer</button>
-        <% } else { %>
-          <p>Searching</p>
-          <button>Sell</button>
-          <button class="offer">Send an offer</button>
-        <% } %>
-        </li>
-      </ul>
-      
-    <% }) %>
-  </main>
+
+    <h2>Anuncios Relevantes</h2>
+    <ul>
+      <% results.forEach( (item)=> { %>
+      <li>
+        <h3><%= item.name %></h3>
+        <p>Precio: <%= item.price %></p>
+
+        <img src="<%= item.photo %>" alt="Imagen de <%= item.name %>" />
+        <p>
+          <li class="status">
+            <% if (item.sale) { %>
+            <p>On sale</p>
+            <button>Buy</button>
+            <button class="offer">Send an offer</button>
+            <% } else { %>
+            <p>Searching</p>
+            <button>Sell</button>
+            <button class="offer">Send an offer</button>
+            <% } %>
+          </li>
+          <span>
+            <small>
+              Tags: <% item.tags.forEach((tag)=>{%>
+              <a href="#">#<%= tag %></a>
+              <%}) %>
+            </small>
+          </span>
+        </p>
+      </li>
+      <%}) %>
+    </ul>
   </body>
 </html>
