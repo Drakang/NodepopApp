@@ -36,7 +36,8 @@ That gonna install all dependencies, run the initDB and run the dev
 
 that let you see the main page, also you can aply some `filters` in the url like:
 
-    name, tags, sale, sort, limit, skip and price, price also admits a range of prices E.g: `http://localhost:3000/?price=10-50`
+    name, tags, sale, sort, limit, skip and price, price also admits a range of prices E.g:
+    `http://localhost:3000/?price=10-50`
 
 2. Go to your url/api/adverts to see the API E.g:
 
