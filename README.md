@@ -27,7 +27,7 @@ That gonna install all dependencies, run the initDB and run the dev
 
 ## GET
 
-1. Go to your url that you set on `.env` bejore E.g:
+1. Go to your url that you set on `.env` before E.g:
 
     `http://localhost:3000/`
     
