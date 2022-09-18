@@ -19,6 +19,9 @@ That gonna install all dependencies, run the initDB and run the dev
 
     npm start
 
+![image](https://user-images.githubusercontent.com/103906418/190901710-f7df55d8-89a3-4d4a-9871-7f91872e7129.png)
+
+
 ## Routes
 
 ## GET
@@ -26,6 +29,9 @@ That gonna install all dependencies, run the initDB and run the dev
 1. Go to your url that you set on `.env` bejore E.g:
 
     `http://localhost:3000/`
+    
+![image](https://user-images.githubusercontent.com/103906418/190901724-58fed5d2-b280-421b-91c9-855ec0521dbe.png)
+
 
 that let you see the main page, also you can aply some `filters` in the url like:
 
@@ -35,10 +41,16 @@ that let you see the main page, also you can aply some `filters` in the url like
 
     `http://localhost:3000/api/adverts`
 
+![image](https://user-images.githubusercontent.com/103906418/190901747-82f62713-5fa2-47c6-84e7-68ea2d726531.png)
+
+
 that let you see the API with all the adverts, also you can aply the same filters than the main page.
 
 ## POST
-    You can post your own adverts on the website using Postman.
+    You can post your own adverts on the website using Postman with the API url E.g: `http://localhost:3000/api/adverts`.
+    
+    ![image](https://user-images.githubusercontent.com/103906418/190901801-82c7fcf2-2e81-472b-b568-47d42bf9f786.png)
+
 
 
 
