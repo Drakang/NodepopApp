@@ -49,7 +49,7 @@ that let you see the API with all the adverts, also you can aply the same filter
 ## POST
     You can post your own adverts on the website using Postman with the API url E.g: `http://localhost:3000/api/adverts`.
     
-    ![image](https://user-images.githubusercontent.com/103906418/190901801-82c7fcf2-2e81-472b-b568-47d42bf9f786.png)
+![image](https://user-images.githubusercontent.com/103906418/190901801-82c7fcf2-2e81-472b-b568-47d42bf9f786.png)
 
 
 
