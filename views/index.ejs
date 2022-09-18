@@ -11,7 +11,7 @@
       <% results.forEach( (item)=> { %>
       <li>
         <h3><%= item.name %></h3>
-        <p>Precio: <%= item.price %></p>
+        <p>Price: <%= item.price %></p>
 
         <img src="<%= item.photo %>" alt="Imagen de <%= item.name %>" />
         <p>
@@ -21,7 +21,7 @@
             <button>Buy</button>
             <button class="offer">Send an offer</button>
             <% } else { %>
-            <p>Searching</p>
+            <p>Out of Stock</p>
             <button>Sell</button>
             <button class="offer">Send an offer</button>
             <% } %>

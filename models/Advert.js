@@ -12,15 +12,15 @@ const advertsSchema = mongoose.Schema(
     collection: "advert",
   }
 );
-advertsSchema.statics.list = function(filter, skip, limit, fields, sort) {
+advertsSchema.statics.list = function (filter, skip, limit, fields, sort) {
   const query = Advert.find(filter);
   query.skip(skip);
   query.limit(limit);
   query.select(fields);
   query.sort(sort);
-  
+
   return query.exec();
-}
+};
 
 const Advert = mongoose.model("Advert", advertsSchema);
 
