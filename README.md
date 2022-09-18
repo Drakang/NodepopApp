@@ -14,6 +14,7 @@ That gonna install all dependencies, run the initDB and run the dev
 ## If you have install all the dependencies and want to delete the database
 
     npm run initDB
+![image](https://user-images.githubusercontent.com/103906418/190901962-9720f336-06c3-44b4-8b37-c22f2b150b7d.png)
 
 ## For launch the dev if you have allready install all
 
